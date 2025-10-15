@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+  <h1>My web actt</h1>
+  <button id="myButton">Cick me</button>
+  <p id="output">I want to learn to code</p>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      
+    }
+    body {
+      background: black;
+      color: white;
+
+    }
+    button{
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s, color 0.3s;
+
+    }
+    button:hover {
+      color: blue;
+      background-color: aquamarine;
+      transition: background-color 0.3s, color 0,3s;
+    }
+
+    body.Click {
+      background: white;
+      border-radius: 50%;
+      color: black;
+    }
+
+
+  </style>
+
+  <script>
+    function Click() {
+      document.body.classList.toggle('Click');
+
+      let output = document.getElementById("output");
+      if (output.textContent === "I want to learn to code") {
+        output.textContent = "Let's learn Javascript together";
+      } else {
+        output.textContent = "I want to learn to code";
+      }
+    }
+
+    document.getElementById("myButton").addEventListener("click", Click);
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todays' Activity</title>
+    <style>
+        
+        body.dark-mode {
+            background-color: #121212;
+            color: white;            
+        }
+    
+        .dark-mode{          
+            background-color: black;
+            color: white;
+            
+        }
+        
+        button{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            border: none;
+            border-radius: 50px;
+            background: black;
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body {
+            text-align: center;
+            align-items: center;
+        }
+        img {
+            border-radius: 50px;
+            width: 200px;
+            height: 200px;
+        }
+        button:hover {
+            color: black;
+            background-color: rgb(150, 255, 127);
+            transition: background-color 2s, color 2s;
+        }
+        body.dark-mode button {
+        background: white;
+         color: black;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Brent Arkin Pasigado</h1>
+    <p>Hi im a programmer.</p>
+        <div class="image">
+        <img src="/Act4/profile.png" alt="Styled image">
+    </div>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <script defer>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
