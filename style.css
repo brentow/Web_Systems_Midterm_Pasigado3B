@@ -622,7 +622,7 @@ body {
 
 .modal-image {
   background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-  height: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
